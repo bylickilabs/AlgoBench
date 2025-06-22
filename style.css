@@ -7,3 +7,14 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+
+.bg-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(130deg, #19fff2 0%, #f72585 100%);
+  opacity: 0.13;
+  filter: blur(48px);
+  pointer-events: none;
+  animation: gradientMove 16s linear infinite;
+}
