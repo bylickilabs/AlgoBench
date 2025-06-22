@@ -33,3 +33,16 @@ function shuffleArray(a) {
   }
   return a;
 }
+
+function renderArray(active = [], selected = [], done = []) {
+  visualizer.innerHTML = '';
+  arr.forEach((val, idx) => {
+    const bar = document.createElement('div');
+    bar.className = 'bar';
+    bar.style.height = `${Math.round(val)}px`;
+    if (done.includes(idx)) bar.classList.add('done');
+    else if (active.includes(idx)) bar.classList.add('active');
+    else if (selected.includes(idx)) bar.classList.add('selected');
+    visualizer.appendChild(bar);
+  });
+}
