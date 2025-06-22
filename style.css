@@ -175,3 +175,12 @@ h1 {
   background: linear-gradient(180deg, #16ffb4 0%, #19fff2 100%);
   box-shadow: 0 0 22px #16ffb488, 0 0 14px #19fff277 inset;
 }
+
+#stats {
+  display: flex;
+  gap: 1.7rem;
+  font-size: 1.11rem;
+  margin-bottom: 0.8rem;
+  color: #e0f7fa;
+  justify-content: center;
+}
