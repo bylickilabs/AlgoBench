@@ -11,6 +11,32 @@
       <span class="subtitle">Visual Algorithm Sandbox</span>
     </h1>
   </header>
+  <main>
+    <div class="dashboard">
+      <div class="controls">
+        <label>
+          Algorithmus:
+          <select id="algorithm">
+            <option value="bubble">Bubble Sort</option>
+            <option value="selection">Selection Sort</option>
+          </select>
+        </label>
+        <label>
+          Array-Größe:
+          <input type="number" id="array-size" min="5" max="60" value="30">
+        </label>
+        <label>
+          Geschwindigkeit:
+          <input type="range" id="speed" min="1" max="120" value="40">
+        </label>
+        <button id="shuffle-btn" class="btn-neon">Neu mischen</button>
+        <button id="start-btn" class="btn-neon">Start</button>
+        <button id="step-btn" class="btn-mini">Step</button>
+        <button id="reset-btn" class="btn-mini">Reset</button>
+        <button id="export-btn" class="btn-mini">Statistik Export</button>
+      </div>
+    </div>
+  </main>
   <footer>
     <span class="footer-text">by BylickiLabs | Neon Tech, Open Source</span>
   </footer>
