@@ -150,3 +150,13 @@ h1 {
   box-shadow: 0 0 28px #19fff244 inset;
   min-height: 180px;
 }
+
+.bar {
+  width: 12px;
+  min-width: 7px;
+  border-radius: 6px 6px 2px 2px;
+  background: linear-gradient(180deg, #f72585 0%, #19fff2 80%);
+  margin: 0 1px;
+  box-shadow: 0 0 14px #19fff288;
+  transition: height 0.18s cubic-bezier(.4,2.3,.62,.62), background 0.18s;
+}
