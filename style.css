@@ -89,3 +89,13 @@ h1 {
   margin-left: 0.4em;
   vertical-align: middle;
 }
+
+.controls select {
+  background: #151a2a;
+  border: 1.5px solid #19fff288;
+  color: #19fff2;
+  border-radius: 5px;
+  padding: 0.2em 0.7em;
+  margin-left: 0.3em;
+  font-size: 1rem;
+}
