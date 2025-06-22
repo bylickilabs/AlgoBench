@@ -46,3 +46,19 @@ function renderArray(active = [], selected = [], done = []) {
     visualizer.appendChild(bar);
   });
 }
+
+if (type === "bubble") {
+  for (let i = 0; i < len; i++) {
+    for (let j = 0; j < len - i - 1; j++) {
+      steps.push({arr: a.slice(), active: [j, j+1], selected: [], done: done.slice(), stats: {...stats}});
+      stats.steps++;
+      stats.comparisons++;
+      if (a[j] > a[j+1]) {
+        [a[j], a[j+1]] = [a[j+1], a[j]];
+        stats.swaps++;
+        steps.push({arr: a.slice(), active: [j, j+1], selected: [j, j+1], done: done.slice(), stats: {...stats}});
+      }
+    }
+    done.push(len - i - 1);
+  }
+}
