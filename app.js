@@ -84,3 +84,8 @@ else if (type === "selection") {
   done = Array.from({length: len}, (_, i) => i);
   steps.push({arr: a.slice(), active: [], selected: [], done: done.slice(), stats: {...stats}});
 }
+
+// Final state (alle fertig)
+done = Array.from({length: len}, (_, i) => i);
+steps.push({arr: a.slice(), active: [], selected: [], done: done.slice(), stats: {...stats}});
+return steps;
