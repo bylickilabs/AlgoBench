@@ -24,3 +24,10 @@ body {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+header {
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+  z-index: 2;
+  position: relative;
+}
