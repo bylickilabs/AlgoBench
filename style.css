@@ -44,3 +44,10 @@ h1 {
     0 0 26px #19fff288,
     0 0 50px #09e7ff77;
 }
+
+.subtitle {
+  font-size: 1.07rem;
+  color: #f72585;
+  letter-spacing: 1px;
+  margin-left: 0.8rem;
+}
