@@ -99,3 +99,18 @@ h1 {
   margin-left: 0.3em;
   font-size: 1rem;
 }
+
+.btn-neon, .btn-mini {
+  background: #19fff2;
+  color: #191a2e;
+  border: none;
+  border-radius: 8px;
+  padding: 0.53em 1.08em;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.02rem;
+  box-shadow: 0 0 12px #19fff288, 0 0 6px #f7258566 inset;
+  margin-right: 0.25em;
+  outline: none;
+  transition: background 0.15s, color 0.15s;
+}
