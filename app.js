@@ -89,3 +89,14 @@ else if (type === "selection") {
 done = Array.from({length: len}, (_, i) => i);
 steps.push({arr: a.slice(), active: [], selected: [], done: done.slice(), stats: {...stats}});
 return steps;
+
+function resetArray(size = +arraySizeInput.value) {
+  arr = [];
+  for (let i = 0; i < size; i++) arr.push(Math.round(Math.random() * 220) + 60);
+  arr = shuffleArray(arr);
+  stepQueue = [];
+  currentStep = 0;
+  stats = {steps: 0, comparisons: 0, swaps: 0, runtime: 0};
+  updateStats();
+  renderArray();
+}
