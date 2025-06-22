@@ -220,3 +220,12 @@ footer {
     height: 190px;
   }
 }
+
+::-webkit-scrollbar {
+  width: 9px;
+  background: #23244a;
+}
+::-webkit-scrollbar-thumb {
+  background: #19fff299;
+  border-radius: 10px;
+}
