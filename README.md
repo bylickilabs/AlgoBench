@@ -1,5 +1,6 @@
 - This project is actively under development.
-  - New features, improvements, and updates are released continuously. Stay tuned for further enhancements.
+  - New features, improvements, and updates are released continuously.
+    - Stay tuned for further enhancements.
 
 <br>
 
