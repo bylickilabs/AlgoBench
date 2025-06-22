@@ -190,3 +190,22 @@ algorithmSelect.onchange = resetSorting;
 speedInput.oninput = function() {
   // optional live preview for speed
 };
+
+exportBtn.onclick = () => {
+  const out = {
+    algorithm: algorithmSelect.value,
+    arraySize: arr.length,
+    steps: stats.steps,
+    comparisons: stats.comparisons,
+    swaps: stats.swaps,
+    runtime: stats.runtime,
+    timestamp: new Date().toISOString()
+  };
+  const blob = new Blob([JSON.stringify(out, null, 2)], {type: "application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = "algobench-stats.json";
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(url), 600);
+};
