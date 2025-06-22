@@ -184,3 +184,8 @@ h1 {
   color: #e0f7fa;
   justify-content: center;
 }
+
+#stats span {
+  color: #16ffb4;
+  font-weight: bold;
+}
