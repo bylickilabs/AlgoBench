@@ -73,3 +73,13 @@ h1 {
   font-size: 1rem;
   color: #16ffb4;
 }
+
+.controls input[type=number] {
+  width: 4em;
+  margin-left: 0.4em;
+  background: #151a2a;
+  border: 1.5px solid #19fff288;
+  color: #19fff2;
+  border-radius: 5px;
+  padding: 0.18em 0.35em;
+}
