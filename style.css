@@ -198,3 +198,8 @@ footer {
   opacity: 0.52;
   user-select: none;
 }
+
+.footer-text {
+  color: #f72585;
+  letter-spacing: 1.1px;
+}
