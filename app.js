@@ -137,3 +137,18 @@ function playSteps() {
   startTime = Date.now();
   next();
 }
+
+function stepOnce() {
+  if (!stepQueue.length || currentStep >= stepQueue.length) return;
+  const step = stepQueue[currentStep];
+  arr = step.arr.slice();
+  stats = {...stats, ...step.stats};
+  updateStats();
+  renderArray(step.active, step.selected, step.done);
+  currentStep++;
+  if (currentStep >= stepQueue.length) {
+    stats.runtime = Date.now() - startTime;
+    updateStats();
+    renderArray([], [], Array.from({length: arr.length}, (_, i) => i));
+  }
+}
