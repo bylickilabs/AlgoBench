@@ -29,8 +29,6 @@ AlgoBench/
 ├── index.html
 ├── style.css
 ├── app.js
-├── assets/
-│   └── bg.svg
 └── README.md
 ```
 
