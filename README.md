@@ -1,3 +1,6 @@
+> This project is actively under development.
+  - New features, improvements, and updates are released continuously. Stay tuned for further enhancements.
+
 |![Status](https://img.shields.io/badge/status-Open-green?style=for-the-badge&logo=githubactions&logoColor=black) | [![Steps I-IV HTML/CSS/JS/PNG](https://img.shields.io/badge/Steps%20I--IV-HTML%2FCSS%2FJS%2FPNG-1e90ff?style=for-the-badge&logo=code&logoColor=white)](#) | ![Release](https://img.shields.io/badge/release-June%2022%2C%202025-on?style=for-the-badge&logo=github&logoColor=black) |
 |---|---|---|
 
