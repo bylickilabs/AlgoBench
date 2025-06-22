@@ -189,3 +189,12 @@ h1 {
   color: #16ffb4;
   font-weight: bold;
 }
+
+footer {
+  text-align: center;
+  color: #222;
+  padding: 2.2rem 0 0.7rem 0;
+  font-size: 1rem;
+  opacity: 0.52;
+  user-select: none;
+}
