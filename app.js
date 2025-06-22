@@ -107,3 +107,33 @@ function updateStats() {
   swapsEl.textContent = stats.swaps;
   runtimeEl.textContent = stats.runtime;
 }
+
+function playSteps() {
+  if (!stepQueue.length) return;
+  isRunning = true;
+  startBtn.disabled = true;
+  stepBtn.disabled = true;
+  resetBtn.disabled = true;
+  let delay = 150 - +speedInput.value;
+  function next() {
+    if (currentStep >= stepQueue.length) {
+      isRunning = false;
+      startBtn.disabled = false;
+      stepBtn.disabled = false;
+      resetBtn.disabled = false;
+      stats.runtime = Date.now() - startTime;
+      updateStats();
+      renderArray([], [], Array.from({length: arr.length}, (_, i) => i));
+      return;
+    }
+    const step = stepQueue[currentStep];
+    arr = step.arr.slice();
+    stats = {...stats, ...step.stats};
+    updateStats();
+    renderArray(step.active, step.selected, step.done);
+    currentStep++;
+    timer = setTimeout(next, delay);
+  }
+  startTime = Date.now();
+  next();
+}
