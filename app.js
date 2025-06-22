@@ -152,3 +152,14 @@ function stepOnce() {
     renderArray([], [], Array.from({length: arr.length}, (_, i) => i));
   }
 }
+
+function resetSorting() {
+  clearTimeout(timer);
+  resetArray();
+  renderArray();
+  startBtn.disabled = false;
+  stepBtn.disabled = false;
+  resetBtn.disabled = false;
+  stats.runtime = 0;
+  updateStats();
+}
