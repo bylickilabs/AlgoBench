@@ -128,3 +128,8 @@ h1 {
   padding: 0.43em 0.8em;
   font-size: 0.97rem;
 }
+
+.btn-mini:hover {
+  background: #19fff2;
+  color: #23244a;
+}
