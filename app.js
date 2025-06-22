@@ -100,3 +100,10 @@ function resetArray(size = +arraySizeInput.value) {
   updateStats();
   renderArray();
 }
+
+function updateStats() {
+  stepsEl.textContent = stats.steps;
+  comparisonsEl.textContent = stats.comparisons;
+  swapsEl.textContent = stats.swaps;
+  runtimeEl.textContent = stats.runtime;
+}
