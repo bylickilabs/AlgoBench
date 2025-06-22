@@ -68,3 +68,8 @@ h1 {
   align-items: center;
   margin-bottom: 1.5rem;
 }
+
+.controls label {
+  font-size: 1rem;
+  color: #16ffb4;
+}
