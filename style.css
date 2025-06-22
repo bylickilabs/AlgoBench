@@ -120,3 +120,11 @@ h1 {
   color: #fff;
   box-shadow: 0 0 14px #f72585aa, 0 0 8px #19fff288 inset;
 }
+
+.btn-mini {
+  background: #23244a;
+  color: #19fff2;
+  border: 1px solid #19fff288;
+  padding: 0.43em 0.8em;
+  font-size: 0.97rem;
+}
