@@ -114,3 +114,9 @@ h1 {
   outline: none;
   transition: background 0.15s, color 0.15s;
 }
+
+.btn-neon:hover, .btn-mini:hover {
+  background: #f72585;
+  color: #fff;
+  box-shadow: 0 0 14px #f72585aa, 0 0 8px #19fff288 inset;
+}
