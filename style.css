@@ -203,3 +203,8 @@ footer {
   color: #f72585;
   letter-spacing: 1.1px;
 }
+
+@media (max-width: 780px) {
+  .dashboard {
+    padding: 1.1rem 0.4rem 0.7rem 0.4rem;
+  }
