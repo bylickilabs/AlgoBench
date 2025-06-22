@@ -62,3 +62,25 @@ if (type === "bubble") {
     done.push(len - i - 1);
   }
 }
+
+else if (type === "selection") {
+  for (let i = 0; i < len - 1; i++) {
+    let minIdx = i;
+    for (let j = i + 1; j < len; j++) {
+      steps.push({arr: a.slice(), active: [minIdx, j], selected: [], done: [], stats: {...stats}});
+      stats.steps++;
+      stats.comparisons++;
+      if (a[j] < a[minIdx]) {
+        minIdx = j;
+      }
+    }
+    if (minIdx !== i) {
+      [a[i], a[minIdx]] = [a[minIdx], a[i]];
+      stats.swaps++;
+      steps.push({arr: a.slice(), active: [i, minIdx], selected: [i, minIdx], done: [], stats: {...stats}});
+    }
+  }
+  // Done
+  done = Array.from({length: len}, (_, i) => i);
+  steps.push({arr: a.slice(), active: [], selected: [], done: done.slice(), stats: {...stats}});
+}
