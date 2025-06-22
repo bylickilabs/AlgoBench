@@ -170,3 +170,8 @@ h1 {
   background: linear-gradient(180deg, #ff5d8f 0%, #16ffb4 100%);
   box-shadow: 0 0 18px #f72585aa, 0 0 16px #16ffb488 inset;
 }
+
+.bar.done {
+  background: linear-gradient(180deg, #16ffb4 0%, #19fff2 100%);
+  box-shadow: 0 0 22px #16ffb488, 0 0 14px #19fff277 inset;
+}
