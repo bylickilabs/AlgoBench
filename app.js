@@ -163,3 +163,30 @@ function resetSorting() {
   stats.runtime = 0;
   updateStats();
 }
+
+shuffleBtn.onclick = resetSorting;
+resetBtn.onclick = resetSorting;
+startBtn.onclick = () => {
+  clearTimeout(timer);
+  stepQueue = prepareSteps();
+  currentStep = 0;
+  stats.runtime = 0;
+  updateStats();
+  playSteps();
+};
+stepBtn.onclick = () => {
+  if (!stepQueue.length || currentStep >= stepQueue.length) {
+    stepQueue = prepareSteps();
+    currentStep = 0;
+    stats.runtime = 0;
+    updateStats();
+    startTime = Date.now();
+  }
+  stepOnce();
+};
+arraySizeInput.onchange = resetSorting;
+algorithmSelect.onchange = resetSorting;
+
+speedInput.oninput = function() {
+  // optional live preview for speed
+};
