@@ -83,3 +83,9 @@ h1 {
   border-radius: 5px;
   padding: 0.18em 0.35em;
 }
+
+.controls input[type=range] {
+  accent-color: #f72585;
+  margin-left: 0.4em;
+  vertical-align: middle;
+}
