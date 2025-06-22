@@ -209,3 +209,7 @@ exportBtn.onclick = () => {
   a.click();
   setTimeout(() => URL.revokeObjectURL(url), 600);
 };
+
+resetArray();
+renderArray();
+updateStats();
