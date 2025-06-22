@@ -51,3 +51,12 @@ h1 {
   letter-spacing: 1px;
   margin-left: 0.8rem;
 }
+
+.dashboard {
+  max-width: 970px;
+  margin: 2rem auto 3.5rem auto;
+  background: rgba(24, 26, 45, 0.91);
+  border-radius: 17px;
+  box-shadow: 0 0 26px #19fff266, 0 0 42px #f7258533;
+  padding: 2.2rem 2.4rem 1.2rem 2.4rem;
+}
